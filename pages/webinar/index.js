@@ -1,5 +1,5 @@
 import FormWebinar from '../../components/FormWebinar';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Head from 'next/head';
 import { ArrowUpIcon } from '@heroicons/react/solid';
 import { useRouter } from 'next/router';

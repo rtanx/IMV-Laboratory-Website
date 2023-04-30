@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { FaWhatsapp } from 'react-icons/fa';
 import { useState, useEffect } from 'react';
 

@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import { ArrowNarrowRightIcon } from '@heroicons/react/solid';
 
@@ -20,11 +20,11 @@ const PersonCard = ({ person }) => {
                 <p className='font-bold'>{person.fullname}</p>
                 <p className='text-sm text-gray-400'>{person.imv_role}</p>
                 <p className='text-sm text-gray-400'>{person.year}</p>
-                <Link href={`/people/${person.user_id}`}>
-                    <a className='flex items-center mt-2 text-sm gap-x-1 hover:gap-x-2 ease-out duration-300 text-blue-500'>
-                        Visit profile
-                        <ArrowNarrowRightIcon className='w-4 h-4' />
-                    </a>
+                <Link
+                    href={`/people/${person.user_id}`}
+                    className='flex items-center mt-2 text-sm gap-x-1 hover:gap-x-2 ease-out duration-300 text-blue-500'>
+                    Visit profile<ArrowNarrowRightIcon className='w-4 h-4' />
+
                 </Link>
             </div>
         </div>

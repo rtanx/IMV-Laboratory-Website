@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Thumbnail from '../../public/blog-thumbnail.webp';
 
 export default function BlogCard() {
