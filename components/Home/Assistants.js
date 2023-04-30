@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 import Image from "next/image";
 import { usePeople } from "../../hooks/usePeople";
 import Loading from "../Loading";
 import { useRouter } from "next/router";
+=======
+import Image from "next/legacy/image";
+import { usePeople } from '../../hooks/usePeople';
+import Loading from '../Loading';
+import { useRouter } from 'next/router';
+>>>>>>> 274f330d77714ea6bb60f9ba0f9e108a1d5d2b09
 
 export default function Assistants() {
   const router = useRouter();
