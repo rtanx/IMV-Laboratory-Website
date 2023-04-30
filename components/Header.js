@@ -25,22 +25,22 @@ export default function Header() {
           >
             <li onClick={() => setShowMenu((prev) => !prev)}>
               <Link href="/">
-                <a>Home</a>
+                Home
               </Link>
             </li>
             <li onClick={() => setShowMenu((prev) => !prev)}>
               <Link href="/people">
-                <a>People</a>
+                People
               </Link>
             </li>
             <li onClick={() => setShowMenu((prev) => !prev)}>
               <Link href="/ResearchPublication">
-                <a>Research & Publication</a>
+                Research & Publication
               </Link>
             </li>
             <li onClick={() => setShowMenu((prev) => !prev)}>
               <Link href="/Blog">
-                <a>Blog</a>
+                Blog
               </Link>
             </li>
           </ul>
