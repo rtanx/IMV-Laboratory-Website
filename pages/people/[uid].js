@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import Head from 'next/head';
 import Header from '../../components/Header';
 import { ArrowNarrowLeftIcon } from '@heroicons/react/solid';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import {
     HashtagIcon,
     BriefcaseIcon,
