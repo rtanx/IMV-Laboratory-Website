@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import { usePeople } from '../../hooks/usePeople';
 import Loading from '../Loading';
 import { useRouter } from 'next/router';

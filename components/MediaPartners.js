@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 const imagePaths = [
     '/medpart_fix/ruang-event.png',

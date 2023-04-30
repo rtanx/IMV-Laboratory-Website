@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Work from '../../public/work.png';
 import Flag from '../../public/flag.png';
 import Calendar from '../../public/calendar.png';
