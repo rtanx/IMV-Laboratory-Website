@@ -41,31 +41,31 @@ const details = () => {
                     <div className='flex'>
                         <div>
                             <Image
-                                src={person.photoURL}
+                                src={person.photo_url}
                                 width={150}
                                 height={150}
-                                // layout='fixed'
+                                layout='fixed'
                                 objectFit='cover'
                                 alt='Profile Picture'
                                 className='rounded-xl'
                             />
-                            {/* <div className='flex justify-between mt-2 px-4'>
-                            <a href=''>
-                                <FaLinkedin
-                                    size={24}
-                                    className='text-blue-700'
-                                />
-                            </a>
-                            <a href=''>
-                                <FaInstagram
-                                    size={24}
-                                    className='text-pink-600'
-                                />
-                            </a>
-                            <a href=''>
-                                <FaGithub size={24} className='text-gray-900' />
-                            </a>
-                        </div> */}
+                            <div className='flex justify-between mt-2 px-4'>
+                                <a href=''>
+                                    <FaLinkedin
+                                        size={24}
+                                        className='text-blue-700'
+                                    />
+                                </a>
+                                <a href=''>
+                                    <FaInstagram
+                                        size={24}
+                                        className='text-pink-600'
+                                    />
+                                </a>
+                                <a href=''>
+                                    <FaGithub size={24} className='text-gray-900' />
+                                </a>
+                            </div>
                         </div>
                         <div className='ml-8 space-y-2'>
                             <div className='flex items-center font-bold mb-4'>
@@ -82,7 +82,7 @@ const details = () => {
                             )}
                             <div className='flex items-center text-gray-500'>
                                 <BriefcaseIcon className='mr-2 w-6 h-6' />
-                                <p>{person.imv_role}</p>
+                                <p>{person.role}</p>
                             </div>
                             <div className='flex items-center text-gray-500'>
                                 <BadgeCheckIcon className='mr-2 w-6 h-6' />

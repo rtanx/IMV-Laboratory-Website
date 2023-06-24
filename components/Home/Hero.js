@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import Image from "next/image";
-=======
 import Image from "next/legacy/image";
->>>>>>> 274f330d77714ea6bb60f9ba0f9e108a1d5d2b09
 import Work from '../../public/work.png';
 import Flag from '../../public/flag.png';
 import Calendar from '../../public/calendar.png';

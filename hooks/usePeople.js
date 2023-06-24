@@ -20,9 +20,9 @@ const sortByRoles = people => {
     let sortedData = [];
     imvRolesOrder.map(role => {
         const dataPerRole = people.filter(
-            d => d.imv_role === role && d.photoURL !== null
+            d => d.role === role && d.photo_url !== null
         );
-        // console.log('dataPerRole:', dataPerRole);
+        console.log('dataPerRole:', dataPerRole);
         sortedData = [...sortedData, ...dataPerRole];
     });
 
@@ -30,11 +30,12 @@ const sortByRoles = people => {
 };
 
 const getPeople = async () => {
-    const { data, error } = await supabase.from('profiles').select();
-
+    const { data, error } = await supabase.from('people').select();
     if (error) throw new Error(error.message);
-    const sortedData = sortByRoles(data);
-    return sortedData;
+    // console.log(data)
+    // const sortedData = sortByRoles(data);
+    // console.log(sortedData);
+    return data;
 };
 
 export const usePeople = () => {
@@ -43,9 +44,9 @@ export const usePeople = () => {
 
 const getPerson = async userId => {
     const { data, error } = await supabase
-        .from('profiles')
+        .from('people')
         .select()
-        .eq('user_id', userId)
+        .eq('uuid', userId)
         .single();
 
     if (error) throw new Error(error.message);
@@ -53,5 +54,5 @@ const getPerson = async userId => {
 };
 
 export const usePerson = userId => {
-    return useQuery('person', () => getPerson(userId));
+    return useQuery('people', () => getPerson(userId));
 };

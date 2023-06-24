@@ -4,6 +4,7 @@ import SideBar from "../../components/People/SideBar";
 import MainSection from "../../components/People/MainSection";
 import AlumniSection from "../../components/People/AlumniSection";
 
+
 const index = () => {
   return (
     <div className="relative max-w-screen-xl mx-auto">

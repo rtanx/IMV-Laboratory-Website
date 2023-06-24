@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-import Image from "next/image";
-=======
 import Image from "next/legacy/image";
->>>>>>> 274f330d77714ea6bb60f9ba0f9e108a1d5d2b09
 
 export default function AssistantCard({ photo, name, code, position, major }) {
   return (
