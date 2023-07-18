@@ -51,7 +51,7 @@ export default function Header() {
                             </Link>
                         </li>
                         <li onClick={() => setShowMenu(prev => !prev)}>
-                            <Link href='/'>
+                            <Link href='/Blog'>
                                 Blog
                             </Link>
                         </li>
