@@ -20,11 +20,10 @@ const getAlumniById = async userId => {
         .select()
         .eq('uuid', userId)
         .single();
-
     if (error) throw new Error(error.message);
     return data;
 };
 
 export const useAlumniById = userId => {
-    return useQuery('alumni', () => getAlumni(userId));
+    return useQuery('alumni', () => getAlumniById(userId));
 };
