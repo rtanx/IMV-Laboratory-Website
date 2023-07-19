@@ -27,8 +27,10 @@ export default function Header() {
                     height={42}
                     objectFit='contain'
                     alt='IMV Logo'
+                    className="cursor-pointer"
+                    onClick={() => router.push('/')}
                 />
-                <h1 className='hidden md:block mr-auto ml-4 text-lg font-medium tracking-wider uppercase'>
+                <h1 className='cursor-pointer hidden md:block mr-auto ml-4 text-lg font-medium tracking-wider uppercase' onClick={() => router.push('/')}>
                     IMV Laboratory
                 </h1>
                 <nav>

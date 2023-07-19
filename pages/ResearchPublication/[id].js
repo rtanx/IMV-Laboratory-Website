@@ -32,14 +32,11 @@ const PublicationPage = () => {
           </button>
           <h1 className="text-2xl font-bold">Research & Publication</h1>
         </div>
-        <div className="px-4 pt-8 pb-12 w-full">
-          {/* <div className="flex-none w-[405px] h-[269px] rounded-lg m-4">
-          <img src={publication?.image_url} className="rounded-lg" alt={publication?.project_name} />
-        </div> */}
-          <h1 className="text-xl font-bold text-center p-2">{publication?.project_name}</h1>
-          <h2 className="text-base text-left font-bold">Abstract:</h2>
-          <p className="text-justify">{publication?.description}</p>
-          <h2 className="text-base text-left font-bold">Year</h2>
+        <div className="py-10 px-12 mx-auto w-full container bg-gray-200 rounded-lg">
+          <h1 className="text-xl font-bold text-center p-2 mb-4 font-serif">{publication?.project_name}</h1>
+          <h2 className="text-base text-left font-bold my-2">Abstract:</h2>
+          <p className="text-justify italic font-serif">{publication?.description}</p>
+          <h2 className="text-base text-left font-bold mt-5">Year</h2>
           <p>{publication?.year}</p>
           <div className="py-5">
             <a
@@ -47,7 +44,7 @@ const PublicationPage = () => {
               target="_blank"
               className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
             >
-              Publication
+              View Publication
             </a>
           </div>
         </div>
