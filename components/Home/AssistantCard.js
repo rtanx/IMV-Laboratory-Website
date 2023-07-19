@@ -2,6 +2,7 @@ import Image from "next/legacy/image";
 
 export default function AssistantCard({ photo, name, code, position, major }) {
   return (
+    
     <div className="flex items-center">
       <Image src={photo} width={72} height={72} className="rounded-full" />
 
