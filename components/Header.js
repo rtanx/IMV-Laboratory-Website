@@ -50,11 +50,11 @@ export default function Header() {
                                 Research & Publication
                             </Link>
                         </li>
-                        <li onClick={() => setShowMenu(prev => !prev)}>
+                        {/* <li onClick={() => setShowMenu(prev => !prev)}>
                             <Link href='/Blog'>
                                 Blog
                             </Link>
-                        </li>
+                        </li> */}
                     </ul>
                 </nav>
                 <button
