@@ -27,10 +27,10 @@ const MainSection = ({ publications }) => {
   }
 
   return (
-    <div class="container w-100 lg:w-4/5 mx-auto flex flex-col">
+    <div class="container w-100 lg:w-4/5 mx-auto">
     {
       publications.map(pub => (
-        <div class="w-full p-8 mt-3 bg-white p-6 rounded-lg shadow-lg cursor-pointer hover:bg-gray-200" onClick={() => handleClick(pub.id)}>
+        <div class="mx-4 p-8 my-2 bg-white rounded-lg shadow-lg cursor-pointer hover:bg-gray-200" onClick={() => handleClick(pub.id)}>
           <h2 class="text-2xl font-bold mb-2 text-gray-800">{pub.project_name}</h2>
           <p class="text-gray-700 my-5 truncate">{pub.description}</p>
           <div className="flex items-center mt-6 text-gray-500">

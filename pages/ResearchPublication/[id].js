@@ -32,7 +32,7 @@ const PublicationPage = () => {
           </button>
           <h1 className="text-2xl font-bold">Research & Publication</h1>
         </div>
-        <div className="py-10 px-12 mx-auto w-full container bg-gray-200 rounded-lg">
+        <div className="py-10 px-12 mx-auto container w-100 bg-gray-200 sm:rounded-lg">
           <h1 className="text-xl font-bold text-center p-2 mb-4 font-serif">{publication?.project_name}</h1>
           <h2 className="text-base text-left font-bold my-2">Abstract:</h2>
           <p className="text-justify italic font-serif">{publication?.description}</p>
