@@ -59,7 +59,7 @@ export default function Header() {
                         </li> */}
                     </ul>
                 </nav>
-                <button
+                {/* <button
                     onClick={() =>
                     (document.location.href =
                         'https://webinar.imvlaboratory.com')
@@ -69,7 +69,7 @@ export default function Header() {
                     <p className='ml-2 uppercase text-sm font-medium tracking-wide'>
                         JOIN WEBINAR
                     </p>
-                </button>
+                </button> */}
             </div>
         </header>
     );
