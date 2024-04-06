@@ -6,10 +6,7 @@ export default function Profile() {
     <div className="flex flex-col md:grid md:grid-cols-2 md:gap-16 items-center p-4 md:p-8 md:h-96 text-center md:text-left">
       <div className="h-full w-full">
         <h1 className="mb-4 text-2xl font-bold tracking-wide">About Us</h1>
-        <p className="">
-          Image Processing & Vision Laboratory (IMV Lab) is a research laboratory under the umbrella of Information & Signal Processing expertise group in Telecommunication Engineering major at Telkom University. In 2021-2022, IMV Lab
-          targeted its research on Image Processing and Computer Vision especially with integration to the upcoming 5G Network Technology at the National (Indonesia) scale.
-        </p>
+        <p className="">Image Processing & Vision Laboratory (IMV Lab) is a research laboratory under the umbrella of Information & Signal Processing expertise group in Telecommunication Engineering major at Telkom University.</p>
         <div className="flex justify-center md:justify-start gap-8 mt-8 mb-8 md:mb-0 text-gray-400">
           <a href="https://line.me/R/ti/p/@uyy9001n" target="_blank" rel="noopener noreferrer">
             <RiLineFill size={32} className="hover:text-green-500" />

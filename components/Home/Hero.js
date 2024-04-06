@@ -16,7 +16,7 @@ export default function Hero() {
                     </p>
                     <button className='button-link'>Learn more</button>
                 </div>
-                <div className='-mt-24 w-96 self-center'>
+                <div className='-mt-24 xl:w-96 self-center'>
                     <Image src={Work} objectFit='contain' />
                 </div>
             </div>

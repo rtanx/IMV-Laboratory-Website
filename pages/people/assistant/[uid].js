@@ -79,21 +79,25 @@ const details = () => {
 
           <div className="mt-8 p-8 rounded-xl bg-pink-100">
             <h1 className="mb-4 text-xl font-bold">Expertise</h1>
-            {/* <ul className='list-disc ml-8'>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                    </ul> */}
+            <ul className="list-disc ml-8">
+              {Array.isArray(person.expertise) ? (
+                person.expertise.map((item, index) => <li key={index}>{item}</li>)
+              ) : Array.isArray(person.expertise?.expertise) ? (
+                person.expertise.expertise.map((item, index) => <li key={index}>{item}</li>)
+              ) : (
+                <li>{person.expertise?.expertise}</li>
+              )}
+            </ul>
           </div>
 
-          <div className="mt-8 p-8 rounded-xl bg-blue-100">
+          {/* <div className="mt-8 p-8 rounded-xl bg-blue-100">
             <h1 className="mb-4 text-xl font-bold">Research & Publication</h1>
-            {/* <ul className='list-disc ml-8'>
-                        <li>Lorem ipsum dolor sit amet.</li>
-                        <li>Lorem ipsum dolor sit amet consectetur.</li>
-                        <li>Lorem ipsum dolor sit.</li>
-                    </ul> */}
-          </div>
+            <ul className="list-disc ml-8">
+              <li>Lorem ipsum dolor sit amet.</li>
+              <li>Lorem ipsum dolor sit amet consectetur.</li>
+              <li>Lorem ipsum dolor sit.</li>
+            </ul>
+          </div> */}
         </div>
       </div>
     </>
