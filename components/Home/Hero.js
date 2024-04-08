@@ -1,9 +1,11 @@
 import Image from "next/legacy/image";
-import Work from '../../public/work.png';
-import Flag from '../../public/flag.png';
-import Calendar from '../../public/calendar.png';
+import Work from "../../public/work.png";
+import Flag from "../../public/flag.png";
+import Calendar from "../../public/calendar.png";
 
 export default function Hero() {
+	const isWebinar = false;
+
     return (
         <div className='flex flex-col md:flex-1 md:grid md:grid-cols-2 md:grid-rows-2 gap-8 pt-4 md:pt-10 pb-16 px-4 md:px-8 text-white'>
             <div className='flex flex-col justify-between md:row-span-2 pt-8 px-8 bg-blue-500 rounded-xl'>
