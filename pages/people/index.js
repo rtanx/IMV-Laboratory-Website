@@ -3,7 +3,7 @@ import Head from "next/head";
 import SideBar from "../../components/People/SideBar";
 import MainSection from "../../components/People/MainSection";
 import AlumniSection from "../../components/People/AlumniSection";
-import BosSection from "../../components/People/BosSection";
+import BosSection from "../../components/People/BossSection";
 
 const index = () => {
   return (
@@ -14,7 +14,7 @@ const index = () => {
       <Header />
       <div className="">
         {/* <SideBar /> */}
-        {/* <BosSection /> */}
+        <BosSection />
         <MainSection />
         <AlumniSection />
       </div>
